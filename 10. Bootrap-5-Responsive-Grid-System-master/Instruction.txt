@@ -1,0 +1,50 @@
+row = parent
+col = child
+
+col is a flexible class
+
+COL-something
+col-1 = 1 grid
+
+BS5 BreakPoint
+1. xs = extra small 		= 0px    - 575px
+2. sm = small       		= 576px  - 767px
+3. md = medium      		= 768px  - 991px
+4. lg = large	    		= 992px  - 1199px
+5. xl = extra Large 		= 1200px - 1399px
+6. xxl = extra extra large      = ≥ 1400px 
+
+Assignment
+xs 
+orange = 6
+blue   = 6
+done
+
+
+sm
+orange = 1
+blue   = 1
+done
+
+
+md
+orange = 10
+blue   = 2
+done
+
+
+lg
+orange = 8
+blue   = 4
+
+xl
+orange = 4
+blue   = 8
+done
+
+
+xxl
+orange = 3
+blue   = 3
+
+
