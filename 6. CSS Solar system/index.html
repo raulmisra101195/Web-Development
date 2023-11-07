@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Solar System</title>
+        <style>
+            body{
+                background-image: url("./img/milkyway.jpg");
+                background-size: cover;
+            }
+            .common{
+                position: absolute;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .sun{
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+                background:red;
+                background-image: url("img/sun.png");
+                background-size: cover;
+                margin: 450px auto;
+                position: relative;
+            }
+            .mercury{
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-image: url("img/1mercury.png");
+                background-size: cover;
+               
+                bottom:25px;
+                right: -100px;
+                transform-origin: -108px center;
+                animation-name:mercuryAnimation;
+                animation-duration: 1s;
+                animation-play-state: running;
+            }
+            @keyframes mercuryAnimation {
+                to{
+                    transform: rotateZ(0deg);
+                }
+                from{
+                    transform: rotateZ(-359deg);
+                }
+            }
+            .venus{
+                width: 70px;
+                height: 70px;
+                border-radius: 70px;
+                background-image: url("img/2venus.png");
+                background-size: cover;
+                
+                bottom: 13px;
+                right: -220px;
+                animation-name: venusAnimation;
+                
+                animation-duration: 2s;
+                
+                transform-origin: -236px center;
+                animation-play-state: running;
+                
+            }
+            @keyframes venusAnimation {
+                0%{
+                    transform:rotateZ(0deg);
+                }   
+                100%{
+                    transform:rotateZ(359deg)
+                }
+            }
+
+            .earth{
+                width: 80px;
+                height: 80px;
+                border-radius: 80px;
+                background-image: url("img/3earth.png");
+                background-size: cover;
+                bottom:10px;
+                right: -350px;
+                transform-origin: -358px center;
+                animation-name: earthAnimation;
+                animation-duration: 3s;
+                animation-play-state: running;
+               
+            }
+            @keyframes earthAnimation {
+                to{
+                    transform:rotateZ(0deg);  
+                }
+                from{
+                    transform:rotateZ(-359deg); 
+                }
+            }
+            .moon{
+                width: 20px;
+                height: 20px;
+                background:rgb(236, 236, 236);
+                border-radius: 20px;
+                bottom: 30px;
+                right: -30px;
+                animation-name:moonAnimation;
+                animation-duration: 1s;
+                transform-origin: -56px center;
+            }
+            @keyframes moonAnimation {
+                0%{
+                    transform:rotateZ(0deg);
+                }
+                100%{
+                    transform:rotateZ(359deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sun">
+            <div class="common mercury"></div>
+            <div class="common venus"></div>
+            <div class="common earth">
+                <div class="common moon"></div>
+            </div>
+        </div>
+    </body>
+</html>
