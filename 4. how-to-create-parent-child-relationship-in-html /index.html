@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Child Parent Relationship</title>
+        <style>
+            #p{
+                width: 500px;
+                height: 500px;
+                background: red;
+            }
+            #c1{
+                width: 250px;
+                height: 250px;
+                background: green;
+            }
+            #c2{
+                width: 250px;
+                height: 250px;
+                background: blue;
+            }
+
+            /*
+                //9. Desendent Selector  p c
+
+                parent child{
+
+                }
+            */
+
+            #p:hover #c1{
+                background: purple;
+                border-radius: 250px ;
+            }
+            #p:hover #c2{
+                background: gray;
+                border-radius: 250px;
+            }
+            #cc1{
+                width: 100px;
+                height: 100px;
+                background: orange;
+            }
+
+            #p:hover #cc1{
+                background: pink;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="p">
+            <div id="c1">
+                <div id="cc1"></div>
+            </div>
+            <div id="c2"></div>
+        </div>
+    </body>
+</html>
