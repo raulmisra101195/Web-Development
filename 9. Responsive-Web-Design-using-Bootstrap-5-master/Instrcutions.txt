@@ -1,0 +1,43 @@
+Vector Graphic
+UX/UI
+Adobe XD
+SVG = Scalable Vector Grphic
+
+Higly Scalable 
+Dont Pixlet
+
+Raster(Pixel) Grahpic 
+Adobe Photoshop
+jpg = joint photographic Expert group
+png
+bmp
+gif
+
+
+ROW = Parent
+Col = CHild
+
+BS Works on 12 Col Grid System
+
+col is a flexible class
+
+7+5 = 12 COl
+
+ttf = True Type FOnt
+woff
+
+Pseudo Class Selector
+::
+::
+
+:
+1. :hover
+2. :focus
+3. :checked
+
+row col correct
+row row x
+row col col x
+row col row col c
+
+Family of Color
